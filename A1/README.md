@@ -20,24 +20,27 @@ The data from this project was collected from the [Wikimedia REST API](https://w
 
 Data from December 2007 - July 2016 was gathered from the [Legacy Pagecounts API](https://wikimedia.org/api/rest_v1/#/Legacy%20data).
 The parameters used in the query were:
-|----param----|----value(s)----|
+
+|param|value(s)|
 |:-----------:|:--------------:|
-|---project---|--en.wikipedia.org--|
-|---access-site----|--desktop-site, mobile-site--|
-|---granularity----|--monthly--|
-|---start----|--2007120100--|
-|---end----|--2016073100--|
+|project|en.wikipedia.org|
+|access-site|desktop-site, mobile-site|
+|granularity|monthly|
+|start|2007120100|
+|end|2016073100|
 
 Data from July 2015 - August 2019 was gathered from the [Pageviews API](https://wikimedia.org/api/rest_v1/#/Pageviews%20data).
 The parameters used in the query were:
-|----param----|----value(s)----|
+
+|param|value(s)|
 |:-----------:|:--------------:|
-|---project---|--en.wikipedia.org--|
-|---access----|--desktop, mobile-site, mobile-app--|
-|---agent----|--user--|
-|---granularity----|--monthly--|
-|---start----|--2015070100--|
-|---end----|--2019083000--|
+|project|en.wikipedia.org|
+|access|desktop, mobile-site, mobile-app|
+|agent|user|
+|granularity|monthly|
+|start|2015070100|
+|end|2019083000|
+
 * The Pageviews API allows the agent query parameters which filters out spider views. This drives the lower counts returned from the new API.
 
 ----
@@ -58,16 +61,16 @@ The parameters used in the query were:
 
 7. A .csv file was generated with the following data:
 
-|----Column Name----|---Data Format---|
+|Column Name|Data Format|
 |:-----------------:|:---------------:|
-|--------year-------|------YYYY-------|
-|-------month-------|--------MM-------|
-|----pagecount_all_views----|----`pagecount_mobile_views` + `pagecount_desktop_views`----|
-|----pagecount_desktop_views----|----# of desktop views per month----|
-|----pagecount_mobile_views----|----# of mobile views per month----|
-|----pageview_all_views----|----`pageview_mobile_views` + `pageview_desktop_views`----|
-|----pageview_desktop_views----|----# of desktop views per month----|
-|----pageview_mobile_views----|----`pageview_mobile-app` + `pageview_mobile_web`----|
+|year|YYYY|
+|month|MM|
+|pagecount_all_views|`pagecount_mobile_views` + `pagecount_desktop_views`|
+|pagecount_desktop_views|# of desktop views per month|
+|pagecount_mobile_views|# of mobile views per month|
+|pageview_all_views|`pageview_mobile_views` + `pageview_desktop_views`|
+|pageview_desktop_views|# of desktop views per month|
+|pageview_mobile_views|`pageview_mobile-app` + `pageview_mobile_web`|
 
 ----
 
