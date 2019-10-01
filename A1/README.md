@@ -20,6 +20,8 @@ The data from this project was collected from the [Wikimedia REST API](https://w
 
 Data from December 2007 - July 2016 was gathered from the [Legacy Pagecounts API](https://wikimedia.org/api/rest_v1/#/Legacy%20data).
 The parameters used in the query were:
+|----param----|----value(s)----|
+|:-----------:|:--------------:|
 |---project---|--en.wikipedia.org--|
 |---access-site----|--desktop-site, mobile-site--|
 |---granularity----|--monthly--|
@@ -28,6 +30,8 @@ The parameters used in the query were:
 
 Data from July 2015 - August 2019 was gathered from the [Pageviews API](https://wikimedia.org/api/rest_v1/#/Pageviews%20data).
 The parameters used in the query were:
+|----param----|----value(s)----|
+|:-----------:|:--------------:|
 |---project---|--en.wikipedia.org--|
 |---access----|--desktop, mobile-site, mobile-app--|
 |---agent----|--user--|
@@ -54,7 +58,8 @@ The parameters used in the query were:
 
 7. A .csv file was generated with the following data:
 
-|:---Column Name---:|:--Data Format--:|
+|----Column Name----|---Data Format---|
+|:-----------------:|:---------------:|
 |--------year-------|------YYYY-------|
 |-------month-------|--------MM-------|
 |----pagecount_all_views----|----`pagecount_mobile_views` + `pagecount_desktop_views`----|
