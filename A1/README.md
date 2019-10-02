@@ -1,5 +1,11 @@
 # [A1: Data Curation](https://wiki.communitydata.science/Human_Centered_Data_Science_(Fall_2019)/Assignments#A1:_Data_curation)
 
+## Overview
+
+This folder contains a project creating a plot of pageviews, aggregated monthly, on the English Wikipedia page, from the beginning of 2008 through August 30, 2019. The goal is to gain an increased understanding with how the monthly traffic has varied over time for the last 10+ years.
+
+----
+
 ## Table of contents
 
 * en-wikipedia_traffic_200712-201809.csv
@@ -18,6 +24,9 @@
 
 The data from this project was collected from the [Wikimedia REST API](https://www.mediawiki.org/wiki/REST_API).
 
+Data was gathered from the Wikimedia REST API,
+Wikimedia Foundation, 2018. CC-BY-SA 3.0
+
 Data from December 2007 - July 2016 was gathered from the [Legacy Pagecounts API](https://wikimedia.org/api/rest_v1/#/Legacy%20data).
 The parameters used in the query were:
 
@@ -28,6 +37,9 @@ The parameters used in the query were:
 |granularity|monthly|
 |start|2007120100|
 |end|2016073100|
+
+* Note: At the time of collection, the pagecount API was failing to return mobile view counts from 200801 - 201409, so this range of values is not included in the final graphic.
+
 
 Data from July 2015 - August 2019 was gathered from the [Pageviews API](https://wikimedia.org/api/rest_v1/#/Pageviews%20data).
 The parameters used in the query were:
@@ -41,7 +53,7 @@ The parameters used in the query were:
 |start|2015070100|
 |end|2019083000|
 
-* The Pageviews API allows the agent query parameters which filters out spider views. This drives the lower counts returned from the new API.
+* The Pageviews API allows the agent query parameter which filters out spider views. This drives the lower counts returned from the new API.
 
 ----
 
@@ -70,15 +82,10 @@ The parameters used in the query were:
 |pagecount_mobile_views|# of mobile views per month|
 |pageview_all_views|`pageview_mobile_views` + `pageview_desktop_views`|
 |pageview_desktop_views|# of desktop views per month|
-|pageview_mobile_views|`pageview_mobile-app` + `pageview_mobile_web`|
+|pageview_mobile_views|`pageview_mobile-app` + `pageview_mobile-web`|
 
 ----
 
 ## Analysis
 
-
-data and code descriptions, attributions and
-provenance information, and hyperlinks to all relevant resources and documentation
-(inside and outside the repo)
-
-information to reproduce the analysis, including data descriptions, attributions and provenance information, and descriptions of all relevant resources and documentation (inside and outside the repo) and hyperlinks to those resources.
+The data was then plotted using Python's matplotlib library. No additional data data 
