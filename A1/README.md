@@ -27,6 +27,8 @@ The data from this project was collected from the [Wikimedia REST API](https://w
 Data was gathered from the Wikimedia REST API,
 Wikimedia Foundation, 2018. CC-BY-SA 3.0
 
+[Additional terms of use](https://foundation.wikimedia.org/wiki/Terms_of_Use/en)
+
 Data from December 2007 - July 2016 was gathered from the [Legacy Pagecounts API](https://wikimedia.org/api/rest_v1/#/Legacy%20data).
 The parameters used in the query were:
 
@@ -38,7 +40,7 @@ The parameters used in the query were:
 |start|2007120100|
 |end|2016073100|
 
-* Note: At the time of collection, the pagecount API was failing to return mobile view counts from 200801 - 201409, so this range of values is not included in the final graphic.
+* Note: Mobile data is only available after October 2014. Therefore, the pagecount API does not return mobile view counts from 200801 - 201409.
 
 
 Data from July 2015 - August 2019 was gathered from the [Pageviews API](https://wikimedia.org/api/rest_v1/#/Pageviews%20data).
