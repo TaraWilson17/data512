@@ -2,7 +2,7 @@
 
 ## Overview
 
-This folder contains a project creating a plot of pageviews, aggregated monthly, on the English Wikipedia page, from the beginning of 2008 through August 30, 2019. The goal is to gain an increased understanding with how the monthly traffic has varied over time for the last 10+ years.
+This folder contains a project creating a plot of pageviews, aggregated monthly, on the English Wikipedia page, from the end of 2007 through August 30, 2019. The goal is to gain an increased understanding with how the monthly traffic has varied over time for the last 10+ years.
 
 ----
 
@@ -12,8 +12,8 @@ This folder contains a project creating a plot of pageviews, aggregated monthly,
 * en-wikipedia_traffic_200712-201809.png
 * hcds-a1-data-curation.ipynb
 * LICENSE.md
-* pagecounts_desktop-site_200801-201607.json
-* pagecounts_mobile-site_200801-201607.json
+* pagecounts_desktop-site_200712-201607.json
+* pagecounts_mobile-site_200712-201607.json
 * pageviews_desktop_201507-201908.json
 * pageviews_mobile-app_201507-201908.json
 * pageviews_mobile-web_201507-201908.json
