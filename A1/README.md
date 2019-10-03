@@ -2,18 +2,18 @@
 
 ## Overview
 
-This folder contains a project creating a plot of pageviews, aggregated monthly, on the English Wikipedia page, from the end of 2007 through August 30, 2019. The goal is to gain an increased understanding with how the monthly traffic has varied over time for the last 10+ years.
+This folder contains a project creating a plot of pageviews, aggregated monthly, on the English Wikipedia page, from the beginning of 2008 through August 30, 2019. The goal is to gain an increased understanding with how the monthly traffic has varied over time for the last 10+ years.
 
 ----
 
 ## Table of contents
 
-* en-wikipedia_traffic_200712-201809.csv
-* en-wikipedia_traffic_200712-201809.png
+* en-wikipedia_traffic_200801-201809.csv
+* en-wikipedia_traffic_200801-201809.png
 * hcds-a1-data-curation.ipynb
 * LICENSE.md
-* pagecounts_desktop-site_200712-201607.json
-* pagecounts_mobile-site_200712-201607.json
+* pagecounts_desktop-site_200801-201607.json
+* pagecounts_mobile-site_200801-201607.json
 * pageviews_desktop_201507-201908.json
 * pageviews_mobile-app_201507-201908.json
 * pageviews_mobile-web_201507-201908.json
@@ -29,7 +29,7 @@ Wikimedia Foundation, 2018. CC-BY-SA 3.0
 
 [Additional terms of use](https://foundation.wikimedia.org/wiki/Terms_of_Use/en)
 
-Data from December 2007 - July 2016 was gathered from the [Legacy Pagecounts API](https://wikimedia.org/api/rest_v1/#/Legacy%20data).
+Data from January 2008 - July 2016 was gathered from the [Legacy Pagecounts API](https://wikimedia.org/api/rest_v1/#/Legacy%20data).
 The parameters used in the query were:
 
 |param|value(s)|
@@ -37,10 +37,10 @@ The parameters used in the query were:
 |project|en.wikipedia.org|
 |access-site|desktop-site, mobile-site|
 |granularity|monthly|
-|start|2007120100|
+|start|2008010100|
 |end|2016073100|
 
-* Note: Mobile data is only available after October 2014. Therefore, the pagecount API does not return mobile view counts from 200712 - 201409.
+* Note: Mobile data is only available after October 2014. Therefore, the pagecount API does not return mobile view counts from 200801 - 201409.
 
 
 Data from July 2015 - August 2019 was gathered from the [Pageviews API](https://wikimedia.org/api/rest_v1/#/Pageviews%20data).
