@@ -40,7 +40,7 @@ The parameters used in the query were:
 |start|2007120100|
 |end|2016073100|
 
-* Note: Mobile data is only available after October 2014. Therefore, the pagecount API does not return mobile view counts from 200801 - 201409.
+* Note: Mobile data is only available after October 2014. Therefore, the pagecount API does not return mobile view counts from 200712 - 201409.
 
 
 Data from July 2015 - August 2019 was gathered from the [Pageviews API](https://wikimedia.org/api/rest_v1/#/Pageviews%20data).
@@ -90,4 +90,4 @@ The parameters used in the query were:
 
 ## Analysis
 
-The data was then plotted using Python's matplotlib library. No additional data data 
+The data was then plotted using Python's matplotlib library. No additional data manipulation occured during this stage.
