@@ -5,28 +5,21 @@
 
 ## 1. Motivation/problem statement
 
-Why are you planning to do this analysis? 
-Why is it potentially interesting and useful, from a scientific, practical, and/or human-centered perspective? 
-What do you hope to learn? 
-Note that you only need to describe your overall research goal at this stage; specific hypotheses or research questions aren’t necessary in the project proposal.
+As a huge college football fan, I wanted to do my project on a topic I care a lot about and in an area that I already have domain knowledge in. Specifically, I think it would be interesting to look at factors driving game attendance. Attendance is a huge part of revenue, but is also important for the program as it helps the school come across as well represented. I think some factors included in the dataset, such as venue capacity, success of team and challenge of opponent, all of which can be found in this same dataset, have significant impact on attendance. If I wanted to bring in additional data to create more of a challenge I think looking at gameday weather would produce interesting analysis as well.
 
-As a big college football fan, I wanted to do a project on a topic I have personal interest in. I think there's a vast array of possible questions to explore and a good mix of categorical and quantitative data. There are a lot of sports stastics so I think this poses an interesting constraint of understanding how end users expect the stastics be delivered so ??
+I want to strengthen my data communication skills through this assignment – both in terms of reproducible code and in terms of analysis and visualizations. I think sports data poses an intriguing challenge since there is a specific set of vocabulary in the space that fans are used to so I will try to balance this while also making my project interpretable to the general public. I think this is an important aspect of human centered data science, as analysis that cannot be understood by the intended audience does not make for successful research. I want to strengthen my feature engineering skills as well so that I can practice generating fields such as indicators. I think the vast amounts of different type of information in this dataset will help me answer the questions I hope to, as well as provide an opportunity to improve my Python and reproducible research skills.
+
 
 ## 2. Data used
-What dataset do you plan to use, and why? 
-Summarize what is represented in the dataset; 
-Link to the dataset, and specify license/terms of use; 
-Briefly justify why this dataset is relevant to your problem statement; 
-Highlight any possible ethical considerations to using this dataset (and say why or why not).
 
-I plan to use the College Football database, aggregated by Bill Radjewski. The dataset contains data from most all aspects of college football including game data, drive data, play by play data, team data, player data, coach data, venue data and player/game statistics. 
+I plan to use the College Football database, aggregated by Bill Radjewski. The dataset contains information about most all aspects of college football including game data, drive data, play by play data, team data, player data, coach data, venue data and player/game statistics. This dataset has a good mix of categorical and quantitative data which will help give me good experience. 
 
 The data is available [here](https://github.com/BlueSCar/cfb-database), and I will access it using [this API](https://api.collegefootballdata.com/api/docs/?url=/api-docs.json#/). The data is made available under a [standard MIT License](https://github.com/BlueSCar/cfb-database/blob/master/LICENSE).
 
-This data is relevant to my problem statement because it ??
+This data is relevant to my problem statement because it covers most all aspects of college football. There should be ample information to answer the questions I choose, as well as room to explore additional factors if desired.
 
-The data does contain identifiable information on athletes such as height, weight, and hometown. However, I believe this is a side effective of playing NCAA football. My only other concern is where all of this data is aggregated from. 
+In terms of ethical concerns, the data does contain identifiable information on athletes such as height, weight, and hometown. However, I believe this is a side effect of playing NCAA football as this information can easily be found on team rosters, scouting websites, etc. so I do not believe there are any real privacy issues. 
 
 ## 3. Unknowns and dependencies
 
-My biggest concern is the availability of the dataset since there are no guarentees about up-time, etc. To combat this, I am planning to store local copies of the data I will use for the analysis once I have completed the API calls. I checked a subset of the data and it looks correct and complete but a potential roadblock would be incomplete sections of the data that would be necessary for a complete analysis causing me to have to pivot. Since the data is so vast and in an area I am curious about I also need to be cognisant of scope creep and ensure I stay answering my proposed questions.
+My biggest concern is the availability of the dataset since there are no guarantees about up-time, etc. To combat this, I am planning to store local copies of the data I will use for the analysis once I have completed the API calls. I checked a subset of the data and it looks correct and complete but another potential roadblock would be incomplete sections of the data that would be necessary for a total analysis causing me to have to pivot. Since the data is so vast and in an area I am curious about I also need to be cognizant of scope creep and ensure I stay answering my proposed questions only.
