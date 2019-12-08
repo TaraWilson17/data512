@@ -10,6 +10,13 @@ The goal of this assignment is to practice reproducible research and effectively
 This research is about NCAA college football, specifically which factors influence attendance. This 
 work looks into the interaction several features have on game attendance from 2012-2018 seasons.
 
+Human-centered data science is work designed to address human need (Week 1 Lecture Slides). The 
+ability to understand what factors make or deter fans from attending college football games has 
+the power to make the experience better for everyone. Games are more fun to attend, programs make 
+more money and players enjoy playing more when the stadium is full. Using data to determine what 
+the driving factors are can help identify the opportunities to improve the experience across the 
+board.
+
 ## Project motivations
 
 As a huge college football fan, I wanted to do my project on a topic I care a lot about and 
@@ -17,13 +24,6 @@ in an area that I already have domain knowledge in. Attendance is a huge part of
 for a university, but is also important for the program as it helps the school come across 
 as well represented and helps finance the athletics department, so I thought it would be 
 interesting to explore in depth.  
-
-Human-centered data science is work designed to address human need (Week 1 Lecture Slides). The 
-ability to understand what factors make or deter fans from attending college football games has 
-the power to make the experience better for everyone. Games are more fun to attend, programs make 
-more money and players enjoy playing more when the stadium is full. Using data to determine what 
-the driving factors are can help identify the opportunities to improve the experience across the 
-board.
 
 College football attendance has been dropping recently, and is in a 22-year low, with many 
 pinning the decline on technology 
@@ -77,6 +77,13 @@ what impacts NCAA football attendance and thus help schools reverse this trend.
     * [A5_final_project_plan.md](https://wiki.communitydata.science/Human_Centered_Data_Science_(Fall_2019)/Assignments#A5:_Final_project_plan)
     * final_presentation_deck.pptx
     * [A6_final_project_presentation.pdf](https://wiki.communitydata.science/Human_Centered_Data_Science_(Fall_2019)/Assignments#A6:_Final_project_presentation)
+* visuals/
+    * home_team_rank_indicator.jpg
+    * away_team_ranked_indicator.jpg
+    * conference_indicator.jpg
+    * max_temp_vs_attendance.jpg
+    * min_temp_vs_attendance.jpg
+    * rain_indicator.jpg
 * data_analysis.ipynb
 * data_collection.ipynb
 * LICENSE
@@ -105,8 +112,9 @@ and precipitation information to supplement the game data.
 
 #### Data analysis
 
-This iPython Notebook analyzes the data in processed_data/seasons_2012-2018_attendance_data.csv. 
-It creates visualizations and tables for the data and calculates corresponding statistics to 
+This iPython Notebook analyzes the data in processed_data/seasons_2012-2018_attendance_data.csv.
+It lists my hypotheses for the factors that influence attendance at college football games. 
+It also creates visualizations and tables for the data and calculates corresponding statistics to 
 address all of the hypotheses.
 
 #### Data collection
