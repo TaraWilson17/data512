@@ -8,7 +8,7 @@ Autumn quarter 2019
 
 The goal of this assignment is to practice reproducible research and effectively communicate findings.
 This research is about NCAA college football, specifically which factors influence attendance. This 
-work looks into the interaction several features have on game attendance from 2012-2018 seasons.
+work looks into the interaction several features have on game attendance from the 2012-2018 seasons.
 
 Human-centered data science is work designed to address human need (Week 1 Lecture Slides). The 
 ability to understand what factors make or deter fans from attending college football games has 
@@ -26,17 +26,17 @@ as well represented and helps finance the athletics department, so I thought it 
 interesting to explore in depth.  
 
 College football attendance has been dropping recently, and is in a 22-year low, with many 
-pinning the decline on technology 
+pinning the decline on technology such as
 [TechCrunch](https://techcrunch.com/2019/09/08/as-college-football-attendance-slumps-new-ways-to-ticket-may-hold-an-answer/). 
-Others have been blaming the decline on the use of cell phones 
+Others have been blaming the decline on the use of cell phones like 
 [front office sports](https://frntofficesport.com/college-football-attendance/). Still others pin 
 this decrease on a change in stadium capacity since "from 2004 to 2018, the average stadium 
 capacity has fallen over 2,000 - almost 2,400 seats" noting that stadiums like Ohio State have 
-altered designs to focus on more luxury seats [NPR](https://www.npr.org/2019/08/24/753962604/attendance-drops-for-college-football). 
+altered designs to focus on more luxury seats per [NPR](https://www.npr.org/2019/08/24/753962604/attendance-drops-for-college-football). 
 [Off Tackle Empire](https://www.offtackleempire.com/2019/7/24/20707199/millennials-terrible-phones-pat-fitzgerald-college-football-attendance-decline-big-ten-media-days) 
 cites kickoff times and team success as possible factors that influence attendance. 
 
-As of 2018, it was the "seventh time in the last eight years that attendance has declined" 
+As of 2018, it was the "seventh time in the last eight years that attendance has declined" as reported by 
 [FunBuzz](https://fanbuzz.com/college-football/cfb-attendance-2019/). Clearly, the phenomenon 
 of declining attendance is evident but there does not appear to be a clear and agreed upon cause. 
 This made me want to investigate and see if I could uncover any trends over the past 7 seasons. 
@@ -51,6 +51,14 @@ explore several varied aspects of this since many ideas have been tossed around 
 of what is causing this decline. Identifying factors that either do or do not appear to be tied 
 to the number of people attending games will help build a more comprehensive understanding of 
 what impacts NCAA football attendance and thus help schools reverse this trend.
+
+## Project conclusions
+
+This analysis concludes that the stadium size, home and away team success, and non-conference match-ups
+have the largest positive influences on game attendance. This study also finds that temperature and precipitation
+have essentially no implications on game attendance. The files in this repository
+include data visualizations, stastistical analysis and descriptions of my findings and their respective implications
+along with discussion of the limitations of and potential future improvements to this study. 
 
 ## Table of contents
 
@@ -96,7 +104,7 @@ I plan to use the College Football database, aggregated by Bill Radjewski. The d
 information about most all aspects of college football including game data, drive data, play by 
 play data, team data, player data, coach data, venue data and player/game statistics. This 
 dataset has a good mix of categorical and quantitative data which will help give me good 
-experience. 
+experience with both. 
 
 The data is available [here](https://github.com/BlueSCar/cfb-database), and I will access it 
 using [this API](https://api.collegefootballdata.com/api/docs/?url=/api-docs.json#/). The data 
@@ -108,14 +116,17 @@ I will also be using weather data from [NOAA Weather API](https://www.noaa.gov/w
 This data is available under public domain. More specifically, I will be gathering temperature 
 and precipitation information to supplement the game data.
 
+More information on data collection can be found in the data_collection.ipynb file.
+
 ### Analysis scripts
 
 #### Data analysis
 
 This iPython Notebook analyzes the data in processed_data/seasons_2012-2018_attendance_data.csv.
 It lists my hypotheses for the factors that influence attendance at college football games. 
-It also creates visualizations and tables for the data and calculates corresponding statistics to 
-address all of the hypotheses.
+It creates visualizations and tables for the data and calculates corresponding statistics to 
+address all of the hypotheses. It also contains conclusions and a detailed discussion of the findings
+as well as acknowledgement of study limitations and suggestions for future work.
 
 #### Data collection
 
@@ -162,5 +173,5 @@ files from API calls and saves final dataset to processed_data/seasons_2012-2018
 |home_team_ranked_ind  |Indication of if home team was ranked the week of the game in the AP poll (1 if yes, 0 if no) |
 |away_team_ranked_ind  |Indication of if away team was ranked the week of the game in the AP poll (1 if yes, 0 if no) |
 |rain                  |Amount of rain in the venue area on the day of the game |
-|max_temp              |Maximum temperature in the venue area on the day of the game |
-|min_temp              |Minimum temperature in the venue area on the day of the game |
+|max_temp              |Maximum temperature in the venue area on the day of the game (F) |
+|min_temp              |Minimum temperature in the venue area on the day of the game (F) |
